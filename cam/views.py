@@ -16,6 +16,10 @@ class AboutView(generic.ListView):
     model = Camera
     template_name = 'cam/about.html'
 
+class RegisterView(generic.ListView):
+    model = Camera
+    template_name = 'cam/register.html'
+
 class CameraList(generic.ListView):
     model = Camera
     template_name = 'cam/brands.html'

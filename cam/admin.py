@@ -11,8 +11,8 @@ class CameraAdim(admin.ModelAdmin):
 
     fieldsets = [
         (None, {'fields': ['brand', 'camera_model']}),
-        ('stars', {'fields': ['stars']}),
-        ('comments', {'fields': ['comment'], 'classes': ['collapse']}),
+        ('Info', {'fields': ['stars', 'price', 'comment']}),
+        #('picture', {'fields': ['camera_picture']}),
     ]
     inlines = [ReviewInline]
     list_display = ('brand', 'camera_model', 'comment')

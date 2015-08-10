@@ -14,4 +14,6 @@ urlpatterns = [
     url(r'^reviews/', views.CameraView.as_view(), name='reviews'),
 
     url(r'^brands/', views.CameraList.as_view(), name='brands'),
+
+    url(r'^register/', views.RegisterView.as_view(), name='register'),
 ]

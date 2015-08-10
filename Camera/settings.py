@@ -78,8 +78,12 @@ WSGI_APPLICATION = 'Camera.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',#'django.db.backends.sqlite3',
+        'NAME': 'tedcamera_db',#os.path.join(BASE_DIR, 'db.sqlite3'),
+        'USE': 'ted',
+        'PASSWORD': 'zyy',
+        'HOST': 'localhost',
+        'PORT': ''
     }
 }
 
@@ -102,3 +106,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#MEDIA_ROOT = '/home/ted/Python/Django/Camera/cam/static/cam/image'

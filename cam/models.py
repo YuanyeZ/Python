@@ -5,16 +5,18 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 # Create your models here.
 class Camera(models.Model):
 
-    camera_model = models.CharField(max_length=256, primary_key=True)
+    camera_model = models.CharField(max_length=255, primary_key=True)
     brand = models.CharField(max_length=20)
 
-    camera_picture = models.ImageField()
+    camera_picture = models.ImageField()#upload_to='/camera_model')
     stars = models.IntegerField(default=0, validators=[MinValueValidator(0),
                                                        MaxValueValidator(5)])
+
     price = models.FloatField(default=0, validators=[MinValueValidator(0)])
 
     #release_date = models.DateField(auto_now=False, auto_now_add=False)
-    comment = models.CharField(max_length=500, default='Nice DLSR Camera')
+    comment = models.CharField(max_length=255, default='Nice DLSR Camera')
+
 
 
     def __unicode__(self):
@@ -43,3 +45,9 @@ class Review(models.Model):
 #
 #     def __unicode__(self):
 #         return ': '.join([self.brand, self.lens_model])
+
+class User(models.Model):
+
+    firstName = models.CharField(max_length=20)
+    lastName = models.CharField(max_length=20)
+    email = models.EmailField()
