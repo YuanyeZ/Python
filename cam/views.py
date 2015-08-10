@@ -5,6 +5,8 @@ from django.views import generic
 from django.utils import timezone
 from .models import Camera, Review
 
+# Create handlers.
+
 # Create your views here.
 class HomeView(generic.ListView):
     model = Camera

@@ -1,7 +1,8 @@
 from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
-# Create your models here.
 
+
+# Create your models here.
 class Camera(models.Model):
 
     camera_model = models.CharField(max_length=256, primary_key=True)
@@ -10,6 +11,7 @@ class Camera(models.Model):
     camera_picture = models.ImageField()
     stars = models.IntegerField(default=0, validators=[MinValueValidator(0),
                                                        MaxValueValidator(5)])
+    price = models.FloatField(default=0, validators=[MinValueValidator(0)])
 
     #release_date = models.DateField(auto_now=False, auto_now_add=False)
     comment = models.CharField(max_length=500, default='Nice DLSR Camera')
