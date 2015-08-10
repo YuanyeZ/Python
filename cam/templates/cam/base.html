@@ -41,32 +41,32 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="first-slide" src="../../static/cam/images/home.jpg" alt="First slide">
+          <img class="first-slide" src="../../static/cam/images/home.jpg" alt="Join Us">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Welcome to Ted's Online DLSR Camera Store!</h1>
+              <h1>Welcome to Ted's Online DSLR Camera Store!</h1>
                 <br><br>
-              <p><a class="btn btn-lg btn-primary" href="/register" role="button">Sign up today for 10% off</a></p>
+              <p><a class="btn btn-lg btn-primary" href="" role="button">Sign up today for 10% off at Amazon</a></p>
             </div>
           </div>
         </div>
         <div class="item">
-          <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+          <img class="second-slide" src="../../static/cam/images/camera_list.jpg" alt="Camera List">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              <h1>The Camera book list</h1>
+              <p>See all the DLSR cameras</p>
+              <p><a class="btn btn-lg btn-primary" href="/camera/brands" role="button">Learn More</a></p>
             </div>
           </div>
         </div>
         <div class="item">
-          <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+          <img class="third-slide" src="../../static/cam/images/reviews.jpg" alt="Review">
           <div class="container">
             <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+              <h1>Camera Reviews </h1>
+              <p>The most professional reviews</p>
+              <p><a class="btn btn-lg btn-primary" href="/camera/review" role="button">Show Me</a></p>
             </div>
           </div>
         </div>
@@ -81,65 +81,23 @@
       </a>
     </div><!-- /.carousel -->
 
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
     <div class="container marketing">
 
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="" alt="Generic placeholder image" width="140" height="140">
-          <h2>Camera News </h2>
-         <p> The newest information about the DLSR camera</p>
-          <p><a class="btn btn-default" href="/news" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="" alt="Generic placeholder image" width="140" height="140">
-          <h2>Professional Review</h2>
-          <p>The deepest first-hand resource of camera devices</p>
-          <p><a class="btn btn-default" href="/brands" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="" alt="Generic placeholder image" width="140" height="140">
-          <h2></h2>
-          <p>The largest library of camera</p>
-          <p><a class="btn btn-default" href="/gallary" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
+        <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading">Ted Example Website</h2>
+              <p class="lead">Hi, Everyone! This website lists several camera models and reviews</p>
+              <p class="lead">For more information, please see
+                  <a class="btn btn-lg btn-primary" href="/about" role="button">About</a>
+              </p>
+            </div>
 
-
-      <!-- START THE FEATURETTES -->
+        </div>
 
       <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading.</h2>
-          <p class="lead">description 1</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-
-      <!-- /END THE FEATURETTES -->
-
-
       <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="">Back to top</a></p>
-        <p>&copy; 2015 Ted &middot; <a href="/about">Privacy</a> &middot; <a href="/about">Terms</a></p>
-      </footer>
-
-    </div><!-- /.container -->
-
-
+      {% include "cam/footer.html" %}
+    </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

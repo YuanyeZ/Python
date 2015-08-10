@@ -8,5 +8,6 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.HomeView.as_view(), name='home'),
-    url(r'^brands/', views.CameraView.as_view(), name='brands'),
+    url(r'^review/', views.CameraView.as_view(), name='review'),
+    url(r'^brands/', views.CameraList.as_view(), name='brands'),
 ]

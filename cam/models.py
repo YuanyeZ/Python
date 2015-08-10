@@ -12,12 +12,23 @@ class Camera(models.Model):
                                                        MaxValueValidator(5)])
 
     #release_date = models.DateField(auto_now=False, auto_now_add=False)
-    review = models.TextField(default="no review")
+    comment = models.CharField(max_length=500, default='Nice DLSR Camera')
 
 
     def __unicode__(self):
         return ': '.join([self.brand, self.camera_model])
 
+
+class Review(models.Model):
+
+    camera = models.ForeignKey(Camera)
+    review_date = models.DateField(auto_now=True, auto_now_add=False)
+    writer = models.CharField(max_length=20, default='Ted')
+
+    review = models.TextField(default="no reviews")
+
+    def __unicode__(self):
+        return ': '.join([self.writer, self.review])
 # class Lens(models.Model):
 #
 #     Camera = models.ForeignKey(Camera)
