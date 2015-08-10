@@ -10,13 +10,19 @@ class HomeView(generic.ListView):
     model = Camera
     template_name = 'cam/home.html'
 
+class AboutView(generic.ListView):
+    model = Camera
+    template_name = 'cam/about.html'
+
 class CameraList(generic.ListView):
     model = Camera
-    template_name = 'cam/forum.html'
+    template_name = 'cam/brands.html'
 
-class CameraView(generic.ListView):
+class CameraView(generic.DetailView):
     CameraModel = Camera
     ReviewModel = Review
     template_name = 'cam/reviews.html'
+
+
 
 
